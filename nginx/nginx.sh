@@ -3,4 +3,4 @@ set -eu
 
 root="$(dirname "$0")"
 
-cd "$root" && nginx -p $PWD -g "error_log error.log;" -c nginx.conf $*
+cd "$root" && nginx -p $PWD -g "error_log error.log;" -c nginx.conf "$@"
